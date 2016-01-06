@@ -8,21 +8,21 @@ namespace Snake
 {
     class Program
     {
-        static void  Main(string[] args)
+        static void Main(string[] args)
         {
             Point p1 = new Point(1, 3, '@');
             p1.Draw();
 
-            Point p2 = new Point();
+            Point p2 = new Point(5, 9, '%');
             p2.Draw();
 
-            List<int> numList = new List<int>();
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-            Console.Write(numList);
-          
+            HorizontalLine hLine = new HorizontalLine(5, 9, 14, '#');
+            hLine.Draw();
+            VerticalLine vLine = new VerticalLine(3, 6, 12, '$');
+            vLine.Draw();
+            
             Console.ReadLine();
+
 
 
         }
